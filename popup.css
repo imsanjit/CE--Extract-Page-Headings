@@ -1,0 +1,81 @@
+/* General styles for the popup */
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    margin: 0;
+    width: 500px;
+    background-color: snow;
+  }
+  
+  /* Headings */
+  h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  /* Search input */
+  #searchInput {
+    width: 97%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Heading counts display */
+  #headingCount {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  /* Headings container */
+  #headingsContainer {
+    border: 1px solid #ccc;
+    padding: 10px;
+    white-space: pre-wrap;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    max-height: 300px; /* Optional: Set a max height */
+    overflow-y: auto; /* Optional: Scroll if content exceeds max height */
+  }
+  
+  /* Message when no headings are found */
+  #noHeadingsMsg {
+    display: none; /* Hidden by default */
+    color: red;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Buttons container */
+  #buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  button:last-child {
+    margin-right: 0; /* Remove right margin for the last button */
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #copyButton, #exportButton {
+    display: block; /* Visible by default unless hidden via JS */
+  }
+  

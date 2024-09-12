@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headings Extractor Chrome Extension Documentation</title>
+    <link rel="stylesheet" href="documentation.css">
+</head>
+<body>
+
+    <h1>Headings Extractor Chrome Extension</h1>
+
+    <h2>Introduction</h2>
+    <p>
+        The <strong>Headings Extractor</strong> Chrome Extension is a simple and intuitive tool that allows users to easily extract all HTML headings 
+        (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) from any webpage. This tool is particularly useful for content writers, SEO specialists, 
+        web developers, and accessibility testers who need a quick overview of the heading structure of a webpage.
+    </p>
+    <p>
+        The extension offers features like searching for specific headings, copying the extracted headings to the clipboard, and exporting them to a 
+        <code>.txt</code> file for easy documentation and further analysis.
+    </p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Extract all HTML headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) from a webpage.</li>
+        <li>Displays the heading content in a clean, plain-text format.</li>
+        <li>Search bar to filter through headings.</li>
+        <li>Shows counts for each type of heading (e.g., <code>H1: 3</code>, <code>H2: 5</code>, etc.).</li>
+        <li>Copy headings to the clipboard with a single click.</li>
+        <li>Export the headings to a <code>.txt</code> file.</li>
+        <li>Automatically hides buttons and displays a message if no headings are found on the page.</li>
+    </ul>
+
+    <h2>Installation Instructions</h2>
+    <h3>Install from Chrome Web Store</h3>
+    <ol>
+        <li>Visit the <a href="https://chrome.google.com/webstore" target="_blank">Chrome Web Store</a> and search for <strong>Headings Extractor</strong>.</li>
+        <li>Click the "Add to Chrome" button to install the extension.</li>
+        <li>Once installed, access the extension by clicking on the <strong>Headings Extractor</strong> icon in your Chrome toolbar.</li>
+    </ol>
+
+    <h3>Manual Installation (For Developers)</h3>
+    <ol>
+        <li>Clone or download the repository containing the extension files to your local machine.</li>
+        <li>Open Chrome and navigate to <code>chrome://extensions/</code>.</li>
+        <li>Enable <strong>Developer Mode</strong> by toggling the switch in the top-right corner.</li>
+        <li>Click the "Load unpacked" button and select the folder where the extension files are located.</li>
+        <li>The extension will now appear in the Chrome toolbar, and you can start using it by clicking the icon.</li>
+    </ol>
+
+    <h2>How to Use</h2>
+    <ol>
+        <li>Navigate to any webpage where you want to extract the headings.</li>
+        <li>Click the <strong>Headings Extractor</strong> icon in the Chrome toolbar to open the extension popup.</li>
+        <li>If headings are found:
+            <ul>
+                <li>The extension will display the headings in a dedicated container.</li>
+                <li>You can search for specific headings using the search bar.</li>
+                <li>Use the "Copy to Clipboard" button to copy the headings.</li>
+                <li>Use the "Export Headings" button to download the headings as a <code>.txt</code> file.</li>
+            </ul>
+        </li>
+        <li>If no headings are found on the webpage, a message will be displayed, and the buttons will be hidden.</li>
+    </ol>
+
+    <h2>Files Included</h2>
+    <ul>
+        <li><strong>manifest.json</strong>: Describes the extension’s metadata, permissions, and background tasks.</li>
+        <li><strong>popup.html</strong>: The HTML structure of the extension’s popup window.</li>
+        <li><strong>popup.js</strong>: Contains the JavaScript logic that controls the extraction of headings, display, and user interaction functionality.</li>
+        <li><strong>popup.css</strong>: The CSS file that defines the styling for the extension’s popup window.</li>
+        <li><strong>content.js</strong>: (If required in the future) Could handle any background tasks or page-specific injected scripts.</li>
+    </ul>
+
+    <h2>Screenshots</h2>
+    <h3>Headings Extracted</h3>
+    <img src="/images/screenshot_headings_found.png" alt="Headings Extracted Screenshot" class="screenshot">
+    <h3>No Headings Found</h3>
+    <img src="/images/screenshot_no_headings.png" alt="No Headings Found Screenshot" class="screenshot">
+
+    <h2>Permissions</h2>
+    <p>The extension requires the following permissions:</p>
+    <ul>
+        <li><strong>activeTab</strong>: Allows the extension to interact with the currently active tab and extract the headings from the webpage.</li>
+    </ul>
+
+    <h2>Security and Privacy</h2>
+    <p>
+        The <strong>Headings Extractor</strong> Chrome Extension does not collect or store any personal data. The extension only reads the HTML structure of 
+        the active tab to extract headings and perform the necessary functions. No data is sent to external servers, and everything is handled locally in your browser.
+    </p>
+
+    <h2>FAQs</h2>
+    <h3>1. Why do I need this extension?</h3>
+    <p>The <strong>Headings Extractor</strong> extension provides a quick and easy way to analyze the heading structure of a webpage. It's useful for developers, SEO experts, content writers, and accessibility testers.</p>
+
+    <h3>2. Can I copy the headings?</h3>
+    <p>Yes! You can copy all the extracted headings by clicking the "Copy to Clipboard" button.</p>
+
+    <h3>3. Can I export the headings?</h3>
+    <p>Absolutely. You can export the list of headings as a <code>.txt</code> file by clicking the "Export Headings" button.</p>
+
+    <h3>4. What happens if there are no headings on the page?</h3>
+    <p>If no headings are found on the webpage, the extension will display a message and the buttons for copying and exporting will be hidden.</p>
+
+    <h3>5. Is this extension free to use?</h3>
+    <p>Yes, the extension is completely free to use.</p>
+
+    <h2>Version History</h2>
+    <ul>
+        <li><strong>v1.0</strong>: Initial release with support for extracting headings, searching, copying to clipboard, and exporting to <code>.txt</code> file.</li>
+    </ul>
+
+    <h2>Support & Feedback</h2>
+    <p>
+        If you have any issues, suggestions, or feedback, please feel free to contact us via the <strong>Chrome Web Store</strong> support section, or submit 
+        an issue on our GitHub repository.
+    </p>
+
+    <h2>License</h2>
+    <p>This project is licensed under the MIT License. You are free to use, modify, and distribute the extension as per the terms of the license.</p>
+
+    <h2>Contributing</h2>
+    <p>
+        We welcome contributions from the community. If you have an idea or feature request, feel free to open a pull request or issue on GitHub. 
+        Your input helps us improve!
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extract Headings</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <h3>Headings</h3>
+  <input type="text" id="searchInput" placeholder="Search headings..." />
+  
+  <!-- Heading counts -->
+  <div id="headingCount">
+    H1: 0, H2: 0, H3: 0, H4: 0, H5: 0, H6: 0
+  </div>
+
+  <!-- Separate container for headings content -->
+  <div id="headingsContainer"></div>
+  
+  <!-- Message when no headings are found -->
+  <div id="noHeadingsMsg">No headings found on this page.</div>
+
+  <!-- Buttons container to place buttons in a row -->
+  <div id="buttonsContainer">
+    <button id="copyButton">Copy to Clipboard</button>
+    <button id="exportButton">Export Headings</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
